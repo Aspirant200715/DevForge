@@ -1,0 +1,35 @@
+{
+  "title": "Exploring Bus Topology: The Backbone of Computer Networks",
+  "summary": "Bus topology is a network layout where each computer and networking device has only one connection to a single cable called the 'bus'. It's simple but limited, with performance dropping if too many devices are connected. Understanding this setup helps us design more efficient networks.",
+  "category": "general",
+  "sections": [
+    {
+      "heading": "Understanding Bus Topology Basics",
+      "body": "In bus topology, nodes communicate through a shared communication medium called the 'bus', which is typically copper wire or optical fiber. Devices tap into this cable at different points to send and receive data.",
+      "key_points": [
+        "Nodes connected via one common backbone",
+        "Data transmission between devices"
+      ]
+    },
+    {
+      "heading": "How Bus Topology Operates in a Network Environment",
+      "body": "When using bus topology, each packet of data is sent to all the other nodes on the network. However, only intended recipients process this information by filtering out their own address from the packets.",
+      "key_points": [
+        "Packets are broadcasted across the bus",
+        "Address filtering distinguishes local and non-local traffic"
+      ]
+    },
+    {
+      "heading": "Limitations of Bus Topology in Modern Networks",
+      "body": "While once common, modern networks often favor more complex topologies due to their limitations. A single fault on the bus can halt communication for all devices, and adding new nodes is impractical without restructuring.",
+      "key_points": [
+        "Single point of failure",
+        "Scalability issues with additional hardware"
+      ]
+    }
+  ],
+  "key_facts": [
+    "All data on the bus must pass through a hub or repeater"
+  ],
+  "visual_style": "mixed"
+}

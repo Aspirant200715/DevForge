@@ -1,0 +1,32 @@
+{
+  "title": "Area Under Curves Using Integration: An Overview",
+  "summary": "Integration is a fundamental concept in calculus that calculates the area under curves. This method provides accurate results for both simple and complex areas.",
+  "category": "general",
+  "sections": [
+    {
+      "heading": "What it is",
+      "body": "The 'area under curve' refers to finding the space enclosed between a function, its graph, and horizontal lines drawn at various points on that same axis.",
+      "key_points": [
+        "Area represents accumulation of quantities like speed or temperature over time"
+      ]
+    },
+    {
+      "heading": "How it works",
+      "body": "Integration is a process where we calculate the limit as the width of subintervals approaches zero, effectively summing up infinitesimally small rectangles underneath the curve.",
+      "key_points": [
+        "Use definite integrals to find exact area values"
+      ]
+    },
+    {
+      "heading": "Why it matters",
+      "body": "Calculating areas using integration is crucial in many real-world problems like physics, engineering and economics where accumulation of quantities over time or space are required.",
+      "key_points": [
+        "Applicable for both discrete and continuous scenarios"
+      ]
+    }
+  ],
+  "key_facts": [
+    "The area under a curve can be computed using integration, which is central to calculus."
+  ],
+  "visual_style": "mixed"
+}

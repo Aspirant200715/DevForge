@@ -1,0 +1,36 @@
+{
+  "title": "Understanding Rainbow Formation: A Simple Guide",
+  "summary": "Rainbows are beautiful natural spectacles that occur when sunlight and rain combine. This tutorial explores the science behind their creation, making it accessible for all ages.",
+  "category": "general",
+  "sections": [
+    {
+      "heading": "What a Rainbow Is",
+      "body": "A rainbow is an optical phenomenon that appears as a spectrum of light in the sky when sunlight interacts with moisture, often after rainfall.",
+      "key_points": [
+        "Rainbows are not physical objects but visual effects."
+      ]
+    },
+    {
+      "heading": "The Science Behind Rainbow Formation",
+      "body": "When sunlight enters a water droplet in the atmosphere, it bends and reflects inside before emerging out of another drop. Separate wavelengths (colors) are reflected at different angles, resulting in the spectrum we see as a rainbow.",
+      "key_points": [
+        "Refraction separates white sunlight into colors."
+      ]
+    },
+    {
+      "heading": "Why It Matters",
+      "body": "Understanding how rainbows form enhances our appreciation of the natural world and its intricate beauty. Studying these phenomena helps us understand light's properties.",
+      "key_points": [
+        "Rainbows are a gateway to understanding optics."
+      ]
+    }
+  ],
+  "key_facts": [
+    "A rainbow is an optical phenomenon caused by sunlight and raindrops"
+  ],
+  "visual_style": "mixed",
+  "images": [
+    "Rainbows in the sky after a storm.",
+    "Illustration of light refraction within a water droplet."
+  ]
+}

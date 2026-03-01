@@ -1,0 +1,39 @@
+{
+  "title": "Light Reflection and Refraction: A Dual Exploration",
+  "summary": "Reflection is the bouncing back of light when it hits a surface, while refraction involves light changing direction due to changes in medium. Both phenomena are crucial for understanding optical devices.",
+  "category": "General Physics - Optics",
+  "sections": [
+    {
+      "heading": "What Light Reflection Is",
+      "body": "Light reflection occurs when photons encounter a material interface and bounce back rather than passing through, with the angle of incidence equal to the angle of reflection.",
+      "key_points": [
+        "Reflection happens at any surface that is not perfectly absorbing"
+      ]
+    },
+    {
+      "heading": "What Light Refraction Is",
+      "body": "Light refraction occurs when light passes from one medium into another, resulting in a change of speed and direction due to differing optical densities.",
+      "key_points": [
+        "Snell's Law describes the relationship between angles of incidence and refraction"
+      ]
+    },
+    {
+      "heading": "How It Works",
+      "body": "When light strikes a smooth surface like mirror, it reflects at an angle equal to its incident angle. During refraction through materials such as glass or water, the speed of light decreases and bends towards normal.",
+      "key_points": [
+        "Reflection is described by specular reflection while diffuse scattering occurs in rough surfaces"
+      ]
+    },
+    {
+      "heading": "Why It Matters",
+      "body": "Understanding these principles allows for the design of lenses, mirrors, and other optical devices essential to technology like cameras, eyeglasses, and telescopes.",
+      "key_points": [
+        "Reflection is crucial in satellite communications"
+      ]
+    }
+  ],
+  "key_facts": [
+    "The angle of incidence always equals the angle of reflection."
+  ],
+  "visual_style": "mixed"
+}

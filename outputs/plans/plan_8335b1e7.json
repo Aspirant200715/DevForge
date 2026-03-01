@@ -1,0 +1,37 @@
+{
+  "title": "Unraveling JEE ADVANCE: A Comprehensive Guide",
+  "summary": "The Joint Entrance Examination (JEE) Advanced is a rigorous undergraduate-level exam designed by the IITs and CET. It's an essential hurdle for aspirants aiming to secure admission in premier engineering colleges across India.",
+  "category": "math",
+  "sections": [
+    {
+      "heading": "JEE Advanced Overview: What is it?",
+      "body": "The JEE Advanced, a pivotal exam for students aiming to study at IITs and CET-affiliated engineering colleges in India. It tests knowledge across subjects including math, physics, chemistry, biology.",
+      "key_points": [
+        "Tested by major Indian technical institutes",
+        "Prefers a strong science foundation"
+      ]
+    },
+    {
+      "heading": "JEE Advanced Process: How does it work?",
+      "body": "Advance level JEE is conducted as two paper-based examinations. The first part, which includes physics and math papers with optional biology questions for candidates appearing after 2015 or below the age of 16.",
+      "key_points": [
+        "Conducted by CBSE in partnership with IITs",
+        "Paper-based format"
+      ]
+    },
+    {
+      "heading": "JEE Advanced Relevance: Why it matters?",
+      "body": "The JEE ADVANCED is considered one of the most challenging exams globally, requiring a deep understanding and application of concepts. This exam significantly influences career opportunities in engineering fields.",
+      "key_points": [
+        "Barrier to top-tier education",
+        "Higher competition for admission"
+      ]
+    }
+  ],
+  "key_facts": [
+    {
+      "important_equation": "Newton's Second Law: F = ma"
+    }
+  ],
+  "visual_style": "mixed"
+}

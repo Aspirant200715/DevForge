@@ -1,0 +1,35 @@
+{
+  "title": "Apache Spark: An In-depth Tutorial with Coding",
+  "summary": "This video tutorial guides learners through Apache Spark's architecture and coding practices to process big data efficiently. We delve into RDD basics, transformations, actions, DataFrames/Datasets for analytical processing (SQL), accumulators, broadcast variables, caching strategies.",
+  "category": "algorithm",
+  "sections": [
+    {
+      "heading": "Understanding Apache Spark Basics",
+      "body": "Apache Spark is a fast and general-purpose cluster computing system. It supports multiple programming languages for writing applications, handles both batch data processing (via RDDs) as well as streamed or real-time events.",
+      "key_points": [
+        "Cluster Computing",
+        "Multiple Languages Support"
+      ]
+    },
+    {
+      "heading": "RDD Fundamentals and Transformations in Spark",
+      "body": "A Resilient Distributed Dataset (RDD) is the core data structure of Apache Spark, an immutable distributed collection of objects that can be cached across nodes. We explore how RDDs are created, manipulated using transformations such as map and filter which don't compute result immediately.",
+      "key_points": [
+        "Immutable Data Structures",
+        "Transformation Operations"
+      ]
+    },
+    {
+      "heading": "Coding Practices with Spark: Actions & SQL Integration",
+      "body": "Spark uses actions to process RDDs and return results. Accumulators help in maintaining simple counters or sums across the cluster, while broadcast variables optimize performance for small datasets shared by executors. We also introduce how integrating Apache Spark with Hive allows complex analytical queries using SQL-like syntax.",
+      "key_points": [
+        "Actions Process RDDs",
+        "Broadcast Variables Optimization"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Spark processes data in memory, minimizing disk I/O and speeding up computations."
+  ],
+  "visual_style": "mixed"
+}

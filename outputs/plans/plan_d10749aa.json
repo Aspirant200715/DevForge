@@ -1,0 +1,35 @@
+{
+  "title": "Understanding Neural Networks: From Basics to Beyond",
+  "summary": "This video provides an introduction to neural networks by explaining their fundamental components, how they learn from data, and why they are pivotal in advancing artificial intelligence. We'll also cover the historical context of this technology.",
+  "category": "math/algorithm",
+  "sections": [
+    {
+      "heading": "What is a Neural Network?",
+      "body": "A neural network imitates the way our brain processes information using layers to recognize patterns. It consists of interconnected nodes, or 'neurons', that work together to solve complex problems.",
+      "key_points": [
+        "Neural networks mimic human brains",
+        "Composed of neuron-like units"
+      ]
+    },
+    {
+      "heading": "How Do Neural Networks Learn?",
+      "body": "Learning occurs through a process called 'backpropagation', where the network adjusts its internal parameters based on errors from output. It iteratively processes data to minimize these errors, improving over time.",
+      "key_points": [
+        "Training involves error correction (backpropagation)",
+        "Iterative improvement"
+      ]
+    },
+    {
+      "heading": "Why Are Neural Networks Important?",
+      "body": "Neural networks form the backbone of modern AI, driving advancements in areas like computer vision and natural language processing. They enable machines to learn from examples without explicit programming.",
+      "key_points": [
+        "Foundation for advanced AI technologies",
+        "Learn through example"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Neural networks can consist of hundreds or even thousands of layers and nodes."
+  ],
+  "visual_style": "mixed"
+}

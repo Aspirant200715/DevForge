@@ -1,0 +1,35 @@
+{
+  "title": "Understanding Gravity: Our Cosmic Glue",
+  "summary": "Gravity shapes our universe by keeping us grounded on Earth and guiding planets in their orbits. This video unravels the mysteries of gravity, from Newton's apple to Einstein's curved spacetime.",
+  "category": "physics",
+  "sections": [
+    {
+      "heading": "What is Gravity?",
+      "body": "Gravity is a fundamental force of nature, drawing objects with mass towards each other. It's what gives weight to physical objects and causes the tides.",
+      "key_points": [
+        "Attracts two masses toward one another",
+        "Influences planetary orbits"
+      ]
+    },
+    {
+      "heading": "How Does Gravity Work?",
+      "body": "Gravity works through the exchange of energy between objects with mass. Sir Isaac Newton formulated this concept, while Albert Einstein later refined it by showing gravity as a warping effect on spacetime.",
+      "key_points": [
+        "Exchange of gravitational potential energy",
+        "Curves spacetime around massive objects"
+      ]
+    },
+    {
+      "heading": "Why Does Gravity Matter?",
+      "body": "Understanding gravity is crucial for space exploration and technology. It affects everything from the flight of a basketball to the structure of galaxies, making it pivotal in physics.",
+      "key_points": [
+        "Essential for understanding planetary motion",
+        "Governs celestial mechanics"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Newton's Universal Law of Gravitation: F= G * (m1*m2) / r^2"
+  ],
+  "visual_style": "simulation"
+}

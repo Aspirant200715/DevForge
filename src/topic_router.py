@@ -112,6 +112,136 @@ def detect_topic(concept: str) -> str:
             return "pendulum"
 
     # ============================================
+    # MATHEMATICS-SPECIFIC ANIMATIONS
+    # ============================================
+    
+    # Matrix Multiplication and Matrix Operations
+    matrix_patterns = [
+        r"\bmatrix\s+(multiplication|multiply|multipl)",
+        r"\bmatrices?\s+operation",
+        r"\bmatrix\s+(addition|subtraction|transpose)",
+        r"\b2x2\s+matrix\b",
+        r"\b3x3\s+matrix\b",
+        r"\bmatrix\b.*\brow\s+(reduction|echelon)\b",
+        r"\bgauss\s+(elimination|reduction)\b",
+        r"\brref\b|\bref\b",
+    ]
+    for pattern in matrix_patterns:
+        if re.search(pattern, text):
+            return "matrix_multiplication"
+
+    # Integral Calculus
+    integr_patterns = [
+        r"\bintegr(al|ation)\s+(calculus)?",
+        r"\b∫\s*f\(x\)\s*dx\b",
+        r"\bdefinite\s+integral",
+        r"\bindefinite\s+integral",
+        r"\briemann\s+sum",
+        r"\barea\s+under\s+curve",
+        r"\b(antiderivative|indefinite\s+integral)\b",
+        r"\bfundamental\s+theorem\s+(of\s+)?calculus\b",
+    ]
+    for pattern in integr_patterns:
+        if re.search(pattern, text):
+            return "integral_calculus"
+
+    # Derivatives and Differentiation
+    derivative_patterns = [
+        r"\bderivative\b",
+        r"\bdifferentiation\b",
+        r"\b(instantaneous\s+)?rate\s+of\s+change\b",
+        r"\bf'(x)|df/dx\b",
+        r"\btangent\s+line\b",
+        r"\bpower\s+rule\b",
+        r"\bchain\s+rule\b",
+        r"\bproduct\s+rule\b",
+        r"\bquotient\s+rule\b",
+        r"\bcritical\s+point",
+    ]
+    for pattern in derivative_patterns:
+        if re.search(pattern, text):
+            return "derivatives"
+
+    # Linear Algebra (Vectors, Vector Spaces)
+    linalg_patterns = [
+        r"\blinear\s+algebra\b",
+        r"\beigenvector\b|\beigenvalue\b",
+        r"\bvector\s+space\b",
+        r"\blinear\s+transformation\b",
+        r"\bbasis\b.*\blinear",
+        r"\bspan\s+(of\s+)?vector",
+        r"\blinear\s+independence\b",
+        r"\borthogonal\s+vector",
+        r"\bdot\s+product\b",
+        r"\bcross\s+product\b",
+    ]
+    for pattern in linalg_patterns:
+        if re.search(pattern, text):
+            return "linear_algebra"
+
+    # Limits and Continuity
+    limit_patterns = [
+        r"\blimit(s)?\s*(and\s+)?continuity\b",
+        r"\blim\s*_{x\s*→",
+        r"\b(left|right)\s+limit\b",
+        r"\bapproach(es)?\s+(as\s+)?x\s+(approaches|→)",
+        r"\binfinity\b.*\blimit\b",
+        r"\bcontinuous\s+function\b",
+        r"\bdiscontinuity\b",
+    ]
+    for pattern in limit_patterns:
+        if re.search(pattern, text):
+            return "limits"
+
+    # Trigonometry
+    trig_patterns = [
+        r"\btrigonometr(y|ic)\b",
+        r"\bunit\s+circle\b",
+        r"\bsin|cos|tan\s+(and|or|function)\b",
+        r"\btrigonometric\s+(identity|identity|function|equation|ratio)",
+        r"\bangle\s+in\s+radian",
+        r"\bcos(ine)?\s+(rule|law)\b",
+        r"\bsin(e)?\s+(rule|law)\b",
+        r"\bsoh\s*cah\s*toa\b",
+    ]
+    for pattern in trig_patterns:
+        if re.search(pattern, text):
+            return "trigonometry"
+
+    # Sequences and Series
+    sequence_patterns = [
+        r"\bsequence(s)?\s+(and\s+)?series\b",
+        r"\barithmetic\s+sequence\b",
+        r"\bgeometric\s+sequence\b",
+        r"\binfinite\s+series\b",
+        r"\bconvergence\s+(and\s+)?divergence\b",
+        r"\bsum\s+(of\s+)?series\b",
+        r"\bnth\s+term\b",
+        r"\bgeometric\s+series\b",
+        r"\bharmonic\s+series\b",
+    ]
+    for pattern in sequence_patterns:
+        if re.search(pattern, text):
+            return "sequences_series"
+
+    # Vector Calculus
+    veccalc_patterns = [
+        r"\bvector\s+calculus\b",
+        r"\bvector\s+field\b",
+        r"\bgradient\b.*\b(vector|field)\b",
+        r"\bdivergence\b",
+        r"\bcurl\b.*\bvector\b",
+        r"\blaplacian\b",
+        r"\bline\s+integral\b",
+        r"\bsurface\s+integral\b",
+        r"\bstokes(\s)?(theorem|law)\b",
+        r"\bgauss(\s)?(theorem|law)\b",
+    ]
+    for pattern in veccalc_patterns:
+        if re.search(pattern, text):
+            return "vector_calculus"
+
+    # ============================================
     # Additional topic-specific animations
     # ============================================
 
@@ -430,7 +560,16 @@ def get_animation_clip(concept: str, duration: float = 5.0, **kwargs) -> Optiona
             create_organic_reaction_clip,
             create_magnetic_field_clip,
             create_electromagnetic_clip,
-            create_gravity_clip
+            create_gravity_clip,
+            # New math topics
+            create_matrix_multiplication_clip,
+            create_integral_calculus_clip,
+            create_derivatives_clip,
+            create_linear_algebra_clip,
+            create_limits_clip,
+            create_trigonometry_clip,
+            create_sequences_series_clip,
+            create_vector_calculus_clip
         )
         
         if topic == "projectile_motion":
@@ -573,6 +712,58 @@ def get_animation_clip(concept: str, duration: float = 5.0, **kwargs) -> Optiona
                 title=kwargs.get("title", "Gravitational Force")
             )
         
+        # ========================================
+        # NEW MATHEMATICS-SPECIFIC ANIMATIONS
+        # ========================================
+        
+        elif topic == "matrix_multiplication":
+            return create_matrix_multiplication_clip(
+                duration=duration,
+                title=kwargs.get("title", "Matrix Multiplication")
+            )
+        
+        elif topic == "integral_calculus":
+            return create_integral_calculus_clip(
+                duration=duration,
+                title=kwargs.get("title", "Integral Calculus")
+            )
+        
+        elif topic == "derivatives":
+            return create_derivatives_clip(
+                duration=duration,
+                title=kwargs.get("title", "Derivatives")
+            )
+        
+        elif topic == "linear_algebra":
+            return create_linear_algebra_clip(
+                duration=duration,
+                title=kwargs.get("title", "Linear Algebra")
+            )
+        
+        elif topic == "limits":
+            return create_limits_clip(
+                duration=duration,
+                title=kwargs.get("title", "Limits and Continuity")
+            )
+        
+        elif topic == "trigonometry":
+            return create_trigonometry_clip(
+                duration=duration,
+                title=kwargs.get("title", "Trigonometry")
+            )
+        
+        elif topic == "sequences_series":
+            return create_sequences_series_clip(
+                duration=duration,
+                title=kwargs.get("title", "Sequences and Series")
+            )
+        
+        elif topic == "vector_calculus":
+            return create_vector_calculus_clip(
+                duration=duration,
+                title=kwargs.get("title", "Vector Calculus")
+            )
+        
         else:
             # Generic animation for any other topic
             return create_generic_clip(
@@ -618,6 +809,15 @@ def get_animation_info(concept: str) -> dict:
         "magnetic_field": "Visualize magnetic field lines from N to S pole with compass needle alignment.",
         "electromagnetic": "Watch electromagnetic induction with magnet moving through coil, inducing current.",
         "gravity": "See gravitational force in action with free fall, field lines, and orbital motion.",
+        # New Math Topics
+        "matrix_multiplication": "Watch matrices multiply element by element with row-column operations highlighted.",
+        "integral_calculus": "See the area under curves being calculated using Riemann sums and integration.",
+        "derivatives": "Observe instantaneous rate of change with tangent lines and slope calculations.",
+        "linear_algebra": "Explore vectors, linear transformations, and vector spaces with dynamic visualizations.",
+        "limits": "Watch functions approach values as variables approach specific points.",
+        "trigonometry": "See the unit circle with angles and their trigonometric ratios displayed.",
+        "sequences_series": "Observe sequence terms and series convergence with bar chart animations.",
+        "vector_calculus": "Visualize vector fields, gradients, and field behavior in dynamic animations.",
         "generic": "Animated visualization with floating concepts and dynamic effects."
     }
     
@@ -627,7 +827,10 @@ def get_animation_info(concept: str) -> dict:
         "geometry", "chemistry", "wave", "statistics",
         "coordinate_geometry", "circuit", "optics", "force",
         "organic_chemistry", "organic_reaction",
-        "magnetic_field", "electromagnetic", "gravity"
+        "magnetic_field", "electromagnetic", "gravity",
+        # New math topics
+        "matrix_multiplication", "integral_calculus", "derivatives",
+        "linear_algebra", "limits", "trigonometry", "sequences_series", "vector_calculus"
     ]
     is_specialized = topic in specialized_topics
     

@@ -1,0 +1,37 @@
+{
+  "title": "Master Apache Spark: A Complete Guide with Coding Tutorial",
+  "summary": "This video tutorial delivers a comprehensive understanding of Apache Spark through coding examples. Dive into writing efficient distributed data processing applications and learn to apply machine learning algorithms using PySpark.",
+  "category": "algorithm",
+  "sections": [
+    {
+      "heading": "Introduction to Apache Spark Basics",
+      "body": "Apache Spark is an open-source, highly optimized engine for large-scale data processing. It provides a unified analytical engine with the speed and flexibility of Hadoop while being more user-friendly.",
+      "key_points": [
+        "Open source software framework",
+        "Leverages in-memory computing to provide high performance"
+      ]
+    },
+    {
+      "heading": "Setting up Apache Spark Environment for Python (PySpark)",
+      "body": "Start by setting up a PySpark environment. Install the necessary packages and create spark contexts using 'spark = pyspark.sql.SparkSession'. This initializes your data processing pipeline.",
+      "key_points": [
+        "Install Spark with Anaconda",
+        "Initialize a DataFrame for inputting datasets"
+      ]
+    },
+    {
+      "heading": "Writing and Executing Your First PySpark Job: Word Count Example",
+      "body": "Perform word count on text data by reading files, converting them into RDDs or DataFrames. Apply transformations to split words then perform an action to trigger computation.",
+      "key_points": [
+        "Read dataset as TextFile and convert it into a distributed collection (RDD)",
+        "Apply transformation 'flatMap' for word splitting",
+        "Perform reduceByKey operation on RDD"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Spark\u2019s resilient distributed datasets (RDD) are immutable and fault-tolerant data structures.",
+    "PySpark uses DAG scheduler to optimize task execution."
+  ],
+  "visual_style": "mixed"
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Intro to Apache Spark: A Beginner's Guide",
+  "summary": "This video tutorial provides a comprehensive introduction to Apache Spark, covering its core concepts and functionalities. By understanding how Spark processes data in memory across nodes, learners will grasp the efficiency of this big data processing framework.",
+  "category": "algorithm",
+  "sections": [
+    {
+      "heading": "Understanding Big Data with Spark",
+      "body": "Apache Spark is an open-source distributed computing system designed for fast computation, analytics, and streaming on large datasets. It achieves high performance by using a combination of in-memory storage and optimization techniques.",
+      "key_points": [
+        "Open-source distributed computing framework",
+        "Uses optimized memory processing"
+      ]
+    },
+    {
+      "heading": "Spark Core Concepts Explained",
+      "body": "The Spark core consists of Resilient Distributed Datasets (RDD) and transformations/actions. RDD provides fault-tolerant, parallel data structures while transformations are operations that produce new datasets without performing an action.",
+      "key_points": [
+        "Fault tolerance with RDDs",
+        "Transformations vs actions"
+      ]
+    },
+    {
+      "heading": "Hadoop Ecosystem Integration and Usage Scenarios",
+      "body": "Spark can be used as a driver for Hadoop ecosystem jobs, which makes it versatile in different computing environments. In this tutorial, we explore practical scenarios where Apache Spark excels compared to other big data frameworks.",
+      "key_points": [
+        "Seamless integration with Hadoop",
+        "Practical usage examples"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Apache Spark performs at least twice faster than Hadoop MapReduce for batch processing tasks"
+  ],
+  "visual_style": "mixed"
+}

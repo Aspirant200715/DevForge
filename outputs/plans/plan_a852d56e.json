@@ -1,0 +1,35 @@
+{
+  "title": "Unveiling Gravity: The Universal Force",
+  "summary": "This video explores gravity as a fundamental force that shapes our universe. It demystifies Newton's law of universal gravitation and provides insights into how it governs the motion of celesties.",
+  "category": "physics",
+  "sections": [
+    {
+      "heading": "What is Gravity?",
+      "body": "Gravity, a force experienced by all objects with mass or energy, attracts them toward each other. This natural phenomenon keeps planets in orbit around the sun and moons revolving around their planet.",
+      "key_points": [
+        "Attracting two masses",
+        "Motion of celestial bodies"
+      ]
+    },
+    {
+      "heading": "How does Gravity Work?",
+      "body": "Gravity operates through the attraction between objects with mass, as described by Newton's law. The force is proportional to their masses and inversely related to the square of the distance between them.",
+      "key_points": [
+        "Attractive Force Proportional",
+        "Inverse Square Law"
+      ]
+    },
+    {
+      "heading": "Why does Gravity Matter?",
+      "body": "Understanding gravity is crucial to comprehend the cosmos, from planetary orbits and tides on Earth to black holes. It plays a pivotal role in shaping history by influencing natural phenomena such as earthquakes.",
+      "key_points": [
+        "Cosmic Orbits",
+        "Influencing Natural Phenomena"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Newton's Law of Universal Gravitation: F = G * (m1*m2)/r^2"
+  ],
+  "visual_style": "simulation"
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Magnetic Field Lines: Unseen Forces That Shape Our World",
+  "summary": "This video explores magnetic field lines \u2013 invisible forces that stem from magnets and electrically charged particles. Learn about their properties, behaviors under various conditions, and why they are essential in understanding physics.",
+  "category": "physics",
+  "sections": [
+    {
+      "heading": "What Are Magnetic Field Lines?",
+      "body": "Magnetic field lines are a visual tool used to represent the influence of magnetic forces around magnets and electric currents. They form continuous loops that exit from north poles, curve through space, and enter at south poles.",
+      "key_points": [
+        "Magnetic field lines show direction",
+        "They loop from pole to pole"
+      ]
+    },
+    {
+      "heading": "How Do Magnetic Field Lines Work?",
+      "body": "Magnetic forces always have a north and south pole. The magnetic force between these poles results in the formation of lines that are denser near stronger regions, creating visual patterns around magnets or within electromagnetically active objects.",
+      "key_points": [
+        "Lines represent magnetic strength",
+        "Density indicates field intensity"
+      ]
+    },
+    {
+      "heading": "Why Do Magnetic Field Lines Matter?",
+      "body": "Magnetic fields are crucial in various technological applications, including medical imaging and the generation of electricity. Understanding magnetic field lines helps scientists visualize how these invisible forces influence both natural phenomena like auroras and man-made devices.",
+      "key_points": [
+        "Fields affect technology",
+        "Help understand Earth's own magnetosphere"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Based on Maxwell's equations, magnetic fields can be visualized with field lines."
+  ],
+  "visual_style": "mixed"
+}

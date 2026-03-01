@@ -1,0 +1,36 @@
+{
+  "title": "Demystifying Matrix Transformations: An Introduction",
+  "summary": "Matrix transformations are mathematical operations that change geometric figures in a consistent way. This video will explore how matrices can scale, rotate, and translate shapes on the Cartesian plane.",
+  "category": "math",
+  "sections": [
+    {
+      "heading": "Understanding Matrix Transformations",
+      "body": "Matrix transformations are operations that allow us to manipulate geometric figures using mathematical matrices. These changes can include scaling, rotating, and translating (moving) shapes in a consistent manner across the Cartesian plane.",
+      "key_points": [
+        "Scaling alters size without altering shape",
+        "Rotation turns objects around an axis"
+      ]
+    },
+    {
+      "heading": "Types of Matrix Transformations Explained",
+      "body": "The three primary matrix transformations are scaling, rotation, and translation. Each transformation has its own unique properties that define how it affects the position or size of a shape on a Cartesian plane.",
+      "key_points": [
+        "Scaling changes dimensions without altering angles",
+        "Rotation maintains relative positions but alters orientation",
+        "Translation moves shapes from one location to another"
+      ]
+    },
+    {
+      "heading": "Matrix Multiplication: How it Works in Transformations",
+      "body": "When we apply a matrix transformation, the original coordinates of points on our shape are multiplied by a specific matrix. The result is new set of transformed coordinates that represents how the figure should look after undergoing transformations.",
+      "key_points": [
+        "Matrix multiplication alters point positions/values",
+        "Resulting coordinate system determines final appearance"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Transformations use mathematical matrices to change figures in a consistent way."
+  ],
+  "visual_style": "mixed"
+}

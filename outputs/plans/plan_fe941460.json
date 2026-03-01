@@ -1,0 +1,35 @@
+{
+  "title": "The Visionary Founder: Anshuman Singh of Scaler School",
+  "summary": "Anshuman Singh founded Scaler school with a mission to revolutionize technology education. This educational video explores the innovative pedagogy, curriculum focus on practical skills over theoretical knowledge, and community impact that define his leadership.",
+  "category": "education",
+  "sections": [
+    {
+      "heading": "Innovative Pedagogy in Technology Education",
+      "body": "Anshuman Singh champions hands-on learning to make complex concepts accessible. Scaler school's interactive lab sessions are where students apply theories, making education a dynamic experience.",
+      "key_points": [
+        "Hands-on approach bridges theory and practice",
+        "Interactive labs demystify technology"
+      ]
+    },
+    {
+      "heading": "Curriculum Focused on Practical Skills",
+      "body": "Scaler school's curriculum goes beyond textbooks, ensuring students develop a skill set needed in the real world. From coding to robotics competitions and internships with tech giants, Scaler is shaping industry-ready graduates.",
+      "key_points": [
+        "Focus on employability",
+        "Tangible skills development"
+      ]
+    },
+    {
+      "heading": "Building a Tech Community",
+      "body": "Scaler school nurtures connections among peers and professionals, creating an ecosystem where students support each other's learning. Regular hackathons foster teamwork while guest lectures from industry leaders keep the curriculum cutting-edge.",
+      "key_points": [
+        "Networking opportunities",
+        "Guest expert insights"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Scaler school graduates often secure positions in leading tech companies."
+  ],
+  "visual_style": "mixed"
+}

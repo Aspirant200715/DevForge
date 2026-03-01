@@ -1,0 +1,32 @@
+{
+  "title": "Discovering Circles: Area & Diameter Explained",
+  "summary": "Explore how to calculate a circle's area using its diameter and learn why understanding this relationship is crucial in various fields. This video unravels the simple yet profound math behind circular areas.",
+  "category": "math",
+  "sections": [
+    {
+      "heading": "Understanding Circle Basics",
+      "body": "Every circle's area can be determined if we know its diameter. The fundamental equation that relates the two is essential for solving numerous real-world problems involving circular shapes.",
+      "key_points": [
+        "A circle has one consistent radius no matter where you measure from"
+      ]
+    },
+    {
+      "heading": "Calculating Area Using Diameter",
+      "body": "To find a circle's area using its diameter, we use the formula A = \u03c0d^2/4. This method simplifies calculations and is widely applicable in fields like engineering and art.",
+      "key_points": [
+        "The relationship between diameter and radius"
+      ]
+    },
+    {
+      "heading": "Why Circle Area Matters",
+      "body": "Understanding how to calculate the area of a circle using its diameter has practical applications, from designing wheels with minimal friction loss to efficiently planning circular landscapes in urban development.",
+      "key_points": [
+        "Application of circle areas"
+      ]
+    }
+  ],
+  "key_facts": [
+    "The formula for the area (A) using diameter is A = \u03c0d^2/4"
+  ],
+  "visual_style": "mixed"
+}

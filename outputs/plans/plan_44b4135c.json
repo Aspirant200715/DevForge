@@ -1,0 +1,38 @@
+{
+  "title": "Addition of Two Numbers: A Basic Concept",
+  "summary": "Understanding addition helps us combine quantities and solve everyday problems. It's a fundamental operation in mathematics that is used extensively.",
+  "category": "general education math topic",
+  "sections": [
+    {
+      "heading": "What it Is",
+      "body": "Addition involves combining two or more numbers to get their total sum, which represents the quantity of items together when counted one by one.",
+      "key_points": [
+        "Combination",
+        "Total Sum",
+        "Counting One By One"
+      ]
+    },
+    {
+      "heading": "How It Works",
+      "body": "To perform addition on two numbers, align them vertically if they are in digit form and start adding from the rightmost digits moving leftward. Carry over values when sums exceed nine.",
+      "key_points": [
+        "Vertical Alignment",
+        "Right to Left Addition",
+        "Carrying Over"
+      ]
+    },
+    {
+      "heading": "Why It Matters",
+      "body": "Addition is not just a math skill but also essential for various real-life scenarios like making change, measuring ingredients in cooking or calculating distances.",
+      "key_points": [
+        "Problem Solving",
+        "Cooking Measurements",
+        "Distance Calculation"
+      ]
+    }
+  ],
+  "key_facts": [
+    "The result of adding two numbers is called the sum."
+  ],
+  "visual_style": "mixed"
+}

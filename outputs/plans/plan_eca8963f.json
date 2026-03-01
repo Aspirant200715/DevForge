@@ -1,0 +1,35 @@
+{
+  "title": "Electromagnetic Waves: Understanding the Basics",
+  "summary": "Electromagnetic waves are a form of energy that travel through space at the speed of light, which is vital for various technologies and understanding physics. These invisible carriers allow us to communicate over vast distances.",
+  "category": "general",
+  "sections": [
+    {
+      "heading": "What it is",
+      "body": "Electromagnetic waves are ripples in the electromagnetic field that can travel through a vacuum or material medium without requiring any physical substance for their propagation.",
+      "key_points": [
+        "They consist of oscillating electric and magnetic fields perpendicular to each other",
+        "Can carry energy from one place to another"
+      ]
+    },
+    {
+      "heading": "How it works",
+      "body": "Electromagnetic waves are produced by the acceleration of charged particles, like electrons. The changing electric field generates a varying magnetic field and vice versa.",
+      "key_points": [
+        "They propagate at light speed in vacuum according to Maxwell's equations",
+        "Can vary widely across different parts of the electromagnetic spectrum"
+      ]
+    },
+    {
+      "heading": "Why it matters",
+      "body": "Electromagnetic waves are fundamental for modern communication, medical imaging techniques such as MRI and X-rays, and they help us understand astronomical objects.",
+      "key_points": [
+        "They form the basis of wireless communications like radio, television, and cellphones",
+        "Crucial in diagnostic tools for non-invasive medical examination"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Electromagnetic waves can travel through a vacuum."
+  ],
+  "visual_style": "mixed"
+}

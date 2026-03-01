@@ -1,0 +1,35 @@
+{
+  "title": "The Magic of Parabolas: Understanding Curves in Mathematics",
+  "summary": "This video explores parabolas - a fundamental concept in algebra and geometry. We'll learn what they are, how their equations describe them, and why understanding these curves is essential for both mathematics and the real world.",
+  "category": "math",
+  "sections": [
+    {
+      "heading": "What Is A Parabola?",
+      "body": "A parabola is a U-shaped curve that can open upwards or downwards, found in various fields of science and mathematics. It's defined as the set of all points (x,y) equidistant from a fixed point called the focus and another line called the directrix.",
+      "key_points": [
+        "Parabola shape",
+        "Focus-directrix property"
+      ]
+    },
+    {
+      "heading": "The Parabolic Path: Key Equations Explained",
+      "body": "In a Cartesian coordinate system, we describe parabolas using the general equation y = ax^2 + bx + c for vertical orientations or x = ay^2 + by + c when it opens sideways. The parameters 'a', 'b', and 'c' affect its width, position, and orientation.",
+      "key_points": [
+        "General parabolic equation",
+        "Parameter effects"
+      ]
+    },
+    {
+      "heading": "Real-World Applications of Parabolas",
+      "body": "Parabolas are not just theoretical constructs; they model many natural phenomena, such as the path of a projectile and satellite dishes. Understanding their properties allows us to design better sports equipment like high jump pits and understand gravitational lensing.",
+      "key_points": [
+        "Projectile motion",
+        "Design applications"
+      ]
+    }
+  ],
+  "key_facts": [
+    "A parabola is the graph of a quadratic function in one variable, y = ax^2 + bx + c."
+  ],
+  "visual_style": "mixed"
+}

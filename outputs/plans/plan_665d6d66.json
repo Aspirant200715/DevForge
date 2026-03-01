@@ -1,0 +1,38 @@
+{
+  "title": "Understanding Gravity: The Force that Shapes Our Universe",
+  "summary": "Gravity is a fundamental force of nature, described by Sir Isaac Newton's laws and later refined through Einstein's theory of general relativity. It governs the motion of planets, stars, and galaxies.",
+  "category": "general",
+  "sections": [
+    {
+      "heading": "What it is",
+      "body": "Gravity is an attractive force that exists between any two masses. It's the reason we stay anchored to Earth and why celestial bodies are bound in their orbits.",
+      "key_points": [
+        "Attracts all matter with mass",
+        "Explains orbital motion of planets",
+        "Determines structure of galaxies"
+      ]
+    },
+    {
+      "heading": "How it works",
+      "body": "Gravity results from the curvature of spacetime caused by an object's mass. The more massive an object, the stronger its gravitational pull.",
+      "key_points": [
+        "Curvature in spacetime around masses",
+        "Massive objects curve space and time",
+        "Causes attraction between bodies"
+      ]
+    },
+    {
+      "heading": "Why it matters",
+      "body": "Gravity shapes the cosmos, dictates planetary systems' dynamics, influences climate by affecting ocean currents on Earth.",
+      "key_points": [
+        "Forms galaxies and holds them together",
+        "Controls solar system orbits",
+        "Affects weather patterns"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Gravity is proportional to mass but inversely proportional to the square of distance between objects"
+  ],
+  "visual_style": "mixed"
+}

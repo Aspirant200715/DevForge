@@ -1,0 +1,36 @@
+{
+  "title": "Exploring Hyperbolas: A Visual Guide",
+  "summary": "Dive into the fascinating world of hyperbolas with this educational video where we dissect and understand their unique properties, equations, and real-world applications.",
+  "category": "math",
+  "sections": [
+    {
+      "heading": "Understanding Hyperbola Equations",
+      "body": "Hyperbolas are defined by the equation `(x^2/a^2) - (y^2/b^2) = 1` for horizontal hyperbolas or vice versa. In this section, we'll break down how these equations represent two separate curves and explore their symmetries.",
+      "key_points": [
+        "Hyperbola is a conic section",
+        "Different from ellipses"
+      ]
+    },
+    {
+      "heading": "Graphical Analysis of Hyperbolas",
+      "body": "We graph hyperbolas by plotting points that satisfy the equation and connecting them smoothly, revealing a pair of mirror-image curves known as branches. This section will guide you through sketching these intriguing graphs.",
+      "key_points": [
+        "Graphs form two separate curves",
+        "Reflected across axes"
+      ]
+    },
+    {
+      "heading": "Real World Applications of Hyperbolas",
+      "body": "Hyperbolas are not just abstract shapes; they have practical uses in fields like navigation and astronomy. By understanding their properties, we can see how these mathematical concepts apply to the world around us.",
+      "key_points": [
+        "Application in satellite dishes",
+        "Useful for lighthouse beams"
+      ]
+    }
+  ],
+  "key_facts": [
+    "The standard equation of a horizontal hyperbola is `(x^2/a^2) - (y^2/b^2) = 1`",
+    "Hyperbolas are symmetrical about both axes and the center"
+  ],
+  "visual_style": "mixed"
+}

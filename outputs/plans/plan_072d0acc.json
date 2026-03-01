@@ -1,0 +1,35 @@
+{
+  "title": "Apache Spark Fundamentals: Power Your Big Data Processing",
+  "summary": "Learn about Apache Spark's architecture, why you might choose it over Hadoop MapReduce, and how to get started with a basic data processing project.",
+  "category": "algorithm",
+  "sections": [
+    {
+      "heading": "Understanding Apache Spark Basics",
+      "body": "Apache Spark is an open-source distributed general-purpose cluster-computing framework. It uses resilient distributed datasets (RDDs) to handle large data sets efficiently, and it offers a comprehensive programming model dealing with both batch processing through MapReduce paradigm as well as real-time analytical queries.",
+      "key_points": [
+        "Apache Spark is an open-source cluster computing framework",
+        "Utilizes RDDs for efficient data handling"
+      ]
+    },
+    {
+      "heading": "Choosing Apache Spark over Hadoop MapReduce",
+      "body": "While both tools are designed to handle big data, they differ in execution model and performance. Apache Spark has a faster runtime due to an optimized shared storage system that minimizes the need for re-computation by caching datasets across jobs.",
+      "key_points": [
+        "Apache Spark is typically faster than Hadoop MapReduce",
+        "Spark reduces the need for data movement with its in-memory computing capability"
+      ]
+    },
+    {
+      "heading": "Getting Started With Apache Spark Data Processing Projects",
+      "body": "To begin using Apache Spark, install it on your local machine or set up a cluster. Familiarize yourself with the core APIs for handling data transformations and actions by writing simple scripts that read datasets as RDD objects, apply operations to them (transformations), trigger computations (actions) like collecting results.",
+      "key_points": [
+        "Install Spark on your local machine or set up a cluster",
+        "Use Core APIs: Read as RDDs -> Transform data -> Trigger Actions"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Apache Spark computes using in-memory processing, which can be several times faster than Hadoop MapReduce"
+  ],
+  "visual_style": "mixed"
+}

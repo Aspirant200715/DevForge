@@ -1,0 +1,35 @@
+{
+  "title": "Understanding Matrix Multiplication",
+  "summary": "Matrix multiplication is a binary operation that takes two matrices and produces another matrix. This process involves the dot product of rows from the first matrix with columns in the second, assuming compatible dimensions.",
+  "category": "mathematics_operations",
+  "sections": [
+    {
+      "heading": "What it is",
+      "body": "Matrix multiplication combines two matrices to form a new one by performing dot products between corresponding rows and columns. Unlike regular arithmetic addition or subtraction, which are commutative but not associative in the case of non-square matrices.",
+      "key_points": [
+        "Requires compatible dimensions for both matrices",
+        "Resulting matrix size depends on smaller dimension's values"
+      ]
+    },
+    {
+      "heading": "How it works",
+      "body": "To multiply two matrices, each element of the resulting matrix is calculated by taking the dot product between a row from one matrix and a column from the other. This involves multiplying corresponding elements together and summing these products.",
+      "key_points": [
+        "Dot product: Multiply matching terms",
+        "Sum up all products for an element"
+      ]
+    },
+    {
+      "heading": "Why it matters",
+      "body": "Matrix multiplication is fundamental in various fields, such as computer graphics, engineering, and economics. It helps to model complex systems by transforming data into new formats that reveal underlying patterns.",
+      "key_points": [
+        "Crucial for scientific computations",
+        "Useful in solving linear equations"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Matrix multiplication is not commutative."
+  ],
+  "visual_style": "mixed"
+}

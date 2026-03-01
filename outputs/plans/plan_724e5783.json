@@ -1,0 +1,35 @@
+{
+  "title": "Apache Spark Essentials: A Beginner's Guide",
+  "summary": "This tutorial introduces Apache Spark for data processing at scale. Learn about its in-memory computing capabilities and understand how it compares to Hadoop.",
+  "category": "algorithm",
+  "sections": [
+    {
+      "heading": "What is Apache Spark?",
+      "body": "Apache Spark is an open-source, distributed computing engine that facilitates fast analytical processing of data. It complements Hadoop by enabling in-memory computation and providing a high throughput speed.",
+      "key_points": [
+        "Open-source platform",
+        "Fast analytics with in-memory computation"
+      ]
+    },
+    {
+      "heading": "How Does Apache Spark Work?",
+      "body": "Spark processes data across clusters of computers, dividing tasks into smaller units called RDDs (Resilient Distributed Datasets) which are fault-tols and efficiently managed. It also provides APIs in Scala or Python for building complex applications on top.",
+      "key_points": [
+        "Distributed computing",
+        "RDD technology"
+      ]
+    },
+    {
+      "heading": "Why Use Apache Spark?",
+      "body": "Spark outperforms Hadoop MapReduce by providing a more flexible model and is ideal for iterative algorithms used in machine learning. Its speed makes it suitable for big data analytics tasks that require real-time processing.",
+      "key_points": [
+        "Flexible computing",
+        "Real-time analysis"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Spark can process up to ten times faster than Hadoop MapReduce for many workloads."
+  ],
+  "visual_style": "mixed"
+}

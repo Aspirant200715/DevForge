@@ -1,0 +1,35 @@
+{
+  "title": "Gravity Unveiled: Understanding Our Tug of War",
+  "summary": "This video explores gravity\u2014the force that holds our universe together. Discover how every object in the cosmos, from stars to apples on Earth's surface, is subjected to this invisible tether.",
+  "category": "physics",
+  "sections": [
+    {
+      "heading": "The Universal Pull - What Gravity Is",
+      "body": "Gravity is a natural force that draws two objects with mass together. Sir Isaac Newton formulated the law of universal gravitation, stating every particle attracts every other particle in the universe.",
+      "key_points": [
+        "Attracting all masses universally",
+        "Fundamental to celest0ry mechanics"
+      ]
+    },
+    {
+      "heading": "Gravity's Mechanism - How Gravity Works",
+      "body": "The gravitational force between two objects is directly proportional to their mass and inversely proportional to the square of the distance between them. This relationship was captured by Newton's law, which explains why planets orbit stars.",
+      "key_points": [
+        "Massive influence on attraction",
+        "Depends on proximity"
+      ]
+    },
+    {
+      "heading": "Gravitational Impact - Why Gravity Matters Here On Earth and Beyond",
+      "body": "On our planet, gravity keeps us grounded, determines the tides through its interaction with ocean water, and influences weather patterns. In space, it shapes galaxies by pulling stars into dense regions.",
+      "key_points": [
+        "Essential for life on Earth",
+        "Influences cosmic formations"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Newton's Law of Universal Gravitation: F = G * (m1*m2)/r^2"
+  ],
+  "visual_style": "simulation"
+}

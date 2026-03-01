@@ -1,0 +1,35 @@
+{
+  "title": "Understanding Gravity: A Basic Guide",
+  "summary": "Gravity is a natural force that attracts two bodies with mass towards each other. It explains why objects fall to the ground and keeps planets in orbit.",
+  "category": "general",
+  "sections": [
+    {
+      "heading": "What it is",
+      "body": "Gravity is a fundamental force of nature that pulls all matter with mass or energy together. It's the reason why we stay grounded on Earth and not float off into space.",
+      "key_points": [
+        "It acts between any two objects in the universe",
+        "The strength depends on their masses and distances"
+      ]
+    },
+    {
+      "heading": "How it works",
+      "body": "Gravity is a result of massive objects bending spacetime with their mass. This curvature directs other smaller objects towards the larger one.",
+      "key_points": [
+        "Mass creates 'gravity wells' in space-time",
+        "Objects follow these curves, resulting in attraction"
+      ]
+    },
+    {
+      "heading": "Why it matters",
+      "body": "Without gravity, life as we know would not exist. It keeps our atmosphere intact and allows for the formation of structures like galaxies.",
+      "key_points": [
+        "It's vital to planetary systems stability",
+        "Enables various astrophysical phenomena"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Gravity is universal; it acts everywhere in the universe"
+  ],
+  "visual_style": "mixed"
+}

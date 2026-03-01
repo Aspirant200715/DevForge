@@ -1,0 +1,36 @@
+{
+  "title": "Matrix Multiplication Unveiled",
+  "summary": "Dive into the process of matrix multiplication\u2014an essential concept in mathematics with applications across various fields. This video breaks down each step to ensure you grasp how matrices interact and produce a resultant product.",
+  "category": "math",
+  "sections": [
+    {
+      "heading": "Understanding Matrix Multiplication Basics",
+      "body": "Matrix multiplication is not about adding rows to columns but rather performing dot products between corresponding pairs of elements. For matrices A and B, where the number of columns in A equals the number of rows in B, their product AB has as many rows as matrix A had and as many columns as matrix B had.",
+      "key_points": [
+        "Matrix multiplication involves dot products",
+        "AB is determined by matching dimensions"
+      ]
+    },
+    {
+      "heading": "The Mechanics of Multiplying Matrices Step-by-Step",
+      "body": "To multiply two matrices, we start with the first row of the first matrix and dot it against each column in turn from the second. This process is repeated for every subsequent row to produce a new element in the product matrix.",
+      "key_points": [
+        "Row by columns approach",
+        "Repeat this step through all rows"
+      ]
+    },
+    {
+      "heading": "Applications and Importance of Matrix Multiplication",
+      "body": "Matrix multiplication is used in computer graphics to transform shapes, economics for input-output models, genetics for population studies. The operation's utility lies not just within these fields but as a fundamental algebraic tool.",
+      "key_points": [
+        "Cross-disciplinary applications",
+        "Algebraic foundational importance"
+      ]
+    }
+  ],
+  "key_facts": [
+    "The product of two matrices is defined only when the number of columns in the first equals the number of rows in the second.",
+    "Matrix multiplication can also be thought as a series of linear combinations."
+  ],
+  "visual_style": "simulation"
+}

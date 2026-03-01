@@ -1,0 +1,35 @@
+{
+  "title": "Exploring Bus Topology: A Network Architecture",
+  "summary": "Bus topology forms a communication network where each computer is connected to two places on a single central cable or backbone. This structure allows for easy expansion but can lead to performance issues as more devices are added. Understanding bus topologies helps in designing efficient networks.",
+  "category": "computer_networks",
+  "sections": [
+    {
+      "heading": "What is Bus Topology?",
+      "body": "Bus topology connects all network nodes along a single central cable, known as the bus or backbone. This straightforward setup was commonly used in early computer networks for its simplicity.",
+      "key_points": [
+        "Central Cable Connects All Nodes",
+        "Simple to Install and Expand"
+      ]
+    },
+    {
+      "heading": "How Does Bus Topology Work?",
+      "body": "Data transmitted on a bus network is sent in one direction along the backbone, which all nodes monitor. When data reaches its destination node, it's received directly and then travels down to reach other connected devices.",
+      "key_points": [
+        "Unidirectional Data Flow",
+        "Nodes Monitor Backbone"
+      ]
+    },
+    {
+      "heading": "Why Bus Topology Matters?",
+      "body": "Despite being largely replaced by more advanced topologies, bus topology provides a fundamental understanding of network communication and its limitations. It's crucial for grasping the evolution of networking technologies.",
+      "key_points": [
+        "Foundation in Network Communication",
+        "Learning from Limitations"
+      ]
+    }
+  ],
+  "key_facts": [
+    "Maximum length: Data travel back and forth without delay on a short bus"
+  ],
+  "visual_style": "mixed"
+}

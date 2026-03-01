@@ -1,0 +1,35 @@
+{
+  "title": "The Intriguing World of Aromatic Compounds",
+  "summary": "Aromatic compounds are a fascinating class of molecules known for their fragrant properties and unique chemical stability. This video will explore the distinctive features, reactions, and significance of these special organic structures.",
+  "category": "chemistry",
+  "sections": [
+    {
+      "heading": "Understanding Aromaticity: The Basics",
+      "body": "Aromatic compounds are ring-shaped molecules that exhibit unusual stability due to a phenomenon called 'aromaticity.' Unlike non-aromatic rings, they follow H\u00fcckel's rule, where the number of \u03c0-electrons is (4n + 2). A classic example is benzene.",
+      "key_points": [
+        "Aromatic compounds are ring structures with unusual stability",
+        "Follow H\u00fcckel's rule for determining aromaticity"
+      ]
+    },
+    {
+      "heading": "The Nature of Aromatic Reactions: Electrophilic Substitution",
+      "body": "These stable compounds react in unique ways, such as electrophilic substitution where an electron-rich aromatic ring attracts and replaces one of its hydrogen atoms. This reaction type is pivotal in organic synthesis for creating complex molecules.",
+      "key_points": [
+        "Aromatic compounds undergo unique reactions like electrophilic substitution",
+        "Important method in the formation of more intricate structures"
+      ]
+    },
+    {
+      "heading": "Applications and Impact: From Molecules to Materials",
+      "body": "Aromatic compounds are not just found within laboratory flasks; they significantly impact everyday life. Their properties contribute to the fragrances of essential oils, medications like aspirin, and even in dyes for fabrics.",
+      "key_points": [
+        "Relevance extends beyond chemistry labs",
+        "Contributes to various aspects of daily life"
+      ]
+    }
+  ],
+  "key_facts": [
+    "H\u00fcckel's rule formula: Aromatic molecules must have a (4n + 2) number of \u03c0-electrons, where n is an integer."
+  ],
+  "visual_style": "mixed"
+}

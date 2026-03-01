@@ -3257,3 +3257,362 @@ def create_gravity_clip(duration: float = 5.0,
         return np.array(img)
     
     return VideoClip(make_frame, duration=duration)
+
+
+# ========================
+# NEW MATHEMATICS ANIMATIONS (No Moving Grid - Topic-Specific Only)
+# ========================
+
+def create_matrix_multiplication_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Matrix Multiplication Animation - Shows matrices multiplied element by element."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        # Title
+        draw.text((80, 30), "Matrix Multiplication", fill=theme["text"], font=font_title)
+        
+        # Matrices on screen animated
+        matrix_a = [[2, 3], [1, 4]]
+        matrix_b = [[5, 0], [2, 1]]
+        result = [[16, 3], [13, 4]]
+        
+        mx1, my1 = 100, 120
+        for i, row in enumerate(matrix_a):
+            for j, val in enumerate(row):
+                x = mx1 + j * 60
+                y = my1 + i * 50
+                highlight = (progress % 1.0) * 4 == (i * 2 + j)
+                col = theme["accent"] if highlight else theme["text"]
+                draw.rectangle([x, y, x + 50, y + 40], outline=col, width=2)
+                draw.text((x + 15, y + 10), str(val), fill=col, font=font_text)
+        
+        draw.text((250, 140), "×", fill=theme["secondary"], font=font_title)
+        
+        mx2, my2 = 300, 120
+        for i, row in enumerate(matrix_b):
+            for j, val in enumerate(row):
+                x = mx2 + j * 60
+                y = my2 + i * 50
+                col = theme["text"]
+                draw.rectangle([x, y, x + 50, y + 40], outline=col, width=2)
+                draw.text((x + 15, y + 10), str(val), fill=col, font=font_text)
+        
+        draw.text((530, 140), "=", fill=theme["secondary"], font=font_title)
+        
+        mx3, my3 = 580, 120
+        for i, row in enumerate(result):
+            for j, val in enumerate(row):
+                x = mx3 + j * 60
+                y = my3 + i * 50
+                val_display = int(val * progress) if progress < 1 else val
+                draw.rectangle([x, y, x + 50, y + 40], outline=theme["accent"], width=2)
+                draw.text((x + 15, y + 10), str(val_display), fill=theme["accent"], font=font_text)
+        
+        draw.text((100, 300), f"Progress: {int(progress * 100)}%", fill=theme["secondary"], font=font_text)
+        draw.text((100, 330), "Row × Column = Element", fill=theme["text"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_integral_calculus_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Integral Calculus - Area under curve with Riemann sums."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        draw.text((80, 30), "Integral Calculus", fill=theme["text"], font=font_title)
+        
+        # Draw axes
+        ax_x, ax_y = 150, 300
+        draw.line([(ax_x, ax_y), (ax_x + 250, ax_y)], fill=theme["text"], width=2)
+        draw.line([(ax_x, ax_y), (ax_x, ax_y - 150)], fill=theme["text"], width=2)
+        
+        # Curve
+        for x in range(0, 250, 5):
+            x_norm = x / 250.0
+            y1 = int(150 * (1 - (x_norm - 0.5) ** 2))
+            y2 = int(150 * (1 - ((x_norm + 0.02) - 0.5) ** 2))
+            draw.line([(ax_x + x, ax_y - y1), (ax_x + x + 5, ax_y - y2)], 
+                     fill=theme["secondary"], width=2)
+        
+        # Riemann rectangles
+        num_rects = max(4, int(10 * progress))
+        for i in range(num_rects):
+            x_rect = ax_x + (i * 250 // num_rects)
+            x_norm = (i + 0.5) / num_rects
+            height = int(150 * (1 - (x_norm - 0.5) ** 2))
+            rect_width = 250 // num_rects
+            
+            draw.rectangle([x_rect, ax_y - height, x_rect + rect_width, ax_y],
+                          fill=None, outline=theme["accent"], width=2)
+        
+        draw.text((100, 350), f"∫ f(x) dx ≈ {num_rects * 20:.0f}", fill=theme["accent"], font=font_text)
+        draw.text((100, 380), f"Rectangles: {num_rects}", fill=theme["secondary"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_derivatives_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Derivatives - Tangent line and instantaneous rate of change."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        draw.text((80, 30), "Derivatives", fill=theme["text"], font=font_title)
+        
+        # Axes
+        ax_x, ax_y = 150, 280
+        draw.line([(ax_x, ax_y), (ax_x + 300, ax_y)], fill=theme["text"], width=2)
+        draw.line([(ax_x, ax_y), (ax_x, ax_y - 150)], fill=theme["text"], width=2)
+        
+        # Parabola
+        for x in range(0, 300, 5):
+            x_norm = x / 300.0
+            y1 = int(100 * (x_norm ** 2))
+            y2 = int(100 * ((x_norm + 0.02) ** 2))
+            draw.line([(ax_x + x, ay - y1), (ax_x + x + 5, ay - y2)], 
+                     fill=theme["secondary"], width=2)
+        
+        # Point on curve
+        px_norm = progress
+        px = ax_x + int(px_norm * 300)
+        py = ay - int(100 * (px_norm ** 2))
+        
+        draw.ellipse([px - 6, py - 6, px + 6, py + 6], fill=theme["accent"], outline=theme["text"], width=2)
+        
+        # Tangent line
+        slope = 2 * px_norm
+        tl_x1 = px - 80
+        tl_y1 = py + int(slope * 80)
+        tl_x2 = px + 80
+        tl_y2 = py - int(slope * 80)
+        draw.line([(tl_x1, tl_y1), (tl_x2, tl_y2)], fill=theme["highlight"], width=2)
+        
+        draw.text((100, 320), f"f'(x) = 2x = {2*px_norm:.2f}", fill=theme["accent"], font=font_text)
+        draw.text((100, 345), f"Slope: {slope:.2f}", fill=theme["secondary"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_linear_algebra_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Linear Algebra - Vectors and transformations."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        draw.text((80, 30), "Linear Algebra", fill=theme["text"], font=font_title)
+        
+        orig_x, orig_y = 300, 250
+        draw.line([(orig_x - 120, orig_y), (orig_x + 120, orig_y)], fill=theme["text"], width=2)
+        draw.line([(orig_x, orig_y - 120), (orig_x, orig_y + 120)], fill=theme["text"], width=2)
+        
+        v1_len = int(80 * progress) + 40
+        v1_angle = math.pi / 6
+        v1_x = orig_x + v1_len * math.cos(v1_angle)
+        v1_y = orig_y - v1_len * math.sin(v1_angle)
+        
+        draw.line([(orig_x, orig_y), (v1_x, v1_y)], fill=theme["accent"], width=3)
+        draw.text((v1_x + 5, v1_y - 15), "v₁", fill=theme["accent"], font=font_text)
+        
+        v2_angle = (progress * math.pi / 3) - math.pi / 6
+        v2_len = 70
+        v2_x = orig_x + v2_len * math.cos(v2_angle)
+        v2_y = orig_y - v2_len * math.sin(v2_angle)
+        
+        draw.line([(orig_x, orig_y), (v2_x, v2_y)], fill=theme["secondary"], width=3)
+        draw.text((v2_x + 5, v2_y - 15), "v₂", fill=theme["secondary"], font=font_text)
+        
+        draw.text((100, 330), "Basis vectors in ℝ²", fill=theme["text"], font=font_text)
+        draw.text((100, 355), f"Angle: {progress * 60:.0f}°", fill=theme["secondary"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_limits_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Limits - Function approaching a limit."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        draw.text((80, 30), "Limits", fill=theme["text"], font=font_title)
+        
+        ax_x, ay = 150, 280
+        draw.line([(ax_x, ay), (ax_x + 300, ay)], fill=theme["text"], width=2)
+        draw.line([(ax_x, ay), (ax_x, ay - 150)], fill=theme["text"], width=2)
+        
+        # Curve
+        for x in range(0, 300, 5):
+            x_norm = x / 300.0
+            y1 = int(100 * math.sin(x_norm * math.pi * 3))
+            y2 = int(100 * math.sin((x_norm + 0.02) * math.pi * 3))
+            draw.line([(ax_x + x, ay - y1), (ax_x + x + 5, ay - y2)], 
+                     fill=theme["secondary"], width=2)
+        
+        # Approaching point (at 0.5)
+        point_x = ax_x + 150
+        point_y = ay
+        
+        approach_x = point_x - int(70 * (1 - progress))
+        approach_offset = 70 * (1 - progress) / 150.0
+        approach_y = ay - int(100 * math.sin((0.5 - approach_offset) * math.pi * 3))
+        
+        if abs(approach_x - point_x) > 2:
+            draw.ellipse([approach_x - 5, approach_y - 5, approach_x + 5, approach_y + 5],
+                        fill=theme["accent"])
+        
+        draw.ellipse([point_x - 7, point_y - 7, point_x + 7, point_y + 7],
+                    fill=theme["highlight"], outline=theme["text"], width=2)
+        
+        draw.text((100, 330), f"lim (x→0.5) f(x) = 0", fill=theme["accent"], font=font_text)
+        draw.text((100, 355), f"Progress: {int(progress * 100)}%", fill=theme["secondary"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_trigonometry_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Trigonometry - Unit circle with angle rotation."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration) % 1.0
+        
+        draw.text((80, 30), "Trigonometry", fill=theme["text"], font=font_title)
+        
+        circ_x, circ_y = 280, 200
+        radius = 90
+        
+        draw.ellipse([circ_x - radius, circ_y - radius, circ_x + radius, circ_y + radius],
+                    outline=theme["text"], width=2)
+        
+        angle = progress * 2 * math.pi
+        rad_x = circ_x + radius * math.cos(angle)
+        rad_y = circ_y + radius * math.sin(angle)
+        
+        draw.line([(circ_x, circ_y), (rad_x, rad_y)], fill=theme["accent"], width=2)
+        
+        for i in range(int(angle * 20)):
+            a = i / 20.0
+            x1 = circ_x + 25 * math.cos(a)
+            y1 = circ_y + 25 * math.sin(a)
+            x2 = circ_x + 25 * math.cos(a + 0.1)
+            y2 = circ_y + 25 * math.sin(a + 0.1)
+            draw.line([(x1, y1), (x2, y2)], fill=theme["secondary"], width=2)
+        
+        sin_val = math.sin(angle)
+        cos_val = math.cos(angle)
+        
+        draw.text((100, 320), f"sin({angle:.2f}) = {sin_val:.3f}", fill=theme["secondary"], font=font_text)
+        draw.text((100, 345), f"cos({angle:.2f}) = {cos_val:.3f}", fill=theme["accent"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_sequences_series_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Sequences and Series - Terms and convergence."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        draw.text((80, 30), "Sequences and Series", fill=theme["text"], font=font_title)
+        draw.text((100, 70), "aₙ = 1/2ⁿ", fill=theme["text"], font=font_text)
+        
+        num_terms = min(int(1 + progress * 9), 9)
+        total_sum = 0
+        
+        for i in range(1, num_terms + 1):
+            term = 1.0 / (2 ** i)
+            total_sum += term
+            bar_x = 100 + (i - 1) * 35
+            bar_height = int(150 * term)
+            
+            draw.rectangle([bar_x, 260 - bar_height, bar_x + 25, 260],
+                          fill=theme["accent"], outline=theme["text"])
+            draw.text((bar_x, 265), f"a{i}", fill=theme["text"], font=font_text)
+        
+        draw.text((500, 150), f"Sum = {total_sum:.4f}", fill=theme["accent"], font=font_text)
+        draw.text((500, 180), "Converges to 1.0", fill=theme["highlight"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
+
+
+def create_vector_calculus_clip(duration: float = 5.0, **kwargs) -> VideoClip:
+    """Vector Calculus - Vector field visualization."""
+    theme = DomainTheme.MATH
+    font_title = _load_font(28)
+    font_text = _load_font(14)
+    
+    def make_frame(t):
+        img = Image.new('RGB', (WIDTH, HEIGHT), color=theme["bg_bottom"])
+        draw = ImageDraw.Draw(img)
+        progress = (t / duration)
+        
+        draw.text((80, 30), "Vector Calculus", fill=theme["text"], font=font_title)
+        
+        grid_size = 35
+        start_x, start_y = 150, 130
+        
+        for i in range(6):
+            for j in range(6):
+                gx = start_x + i * grid_size
+                gy = start_y + j * grid_size
+                
+                dx = i - 2.5
+                dy = j - 2.5
+                mag = math.sqrt(dx ** 2 + dy ** 2) + 0.1
+                
+                angle = math.atan2(dy, dx) + progress * math.pi / 2
+                vlen = int(12 * (1 + 0.3 * math.sin(progress * 2 * math.pi)))
+                
+                vx = gx + vlen * math.cos(angle)
+                vy = gy + vlen * math.sin(angle)
+                
+                col = theme["accent"] if mag < 2.5 else theme["secondary"]
+                draw.line([(gx, gy), (vx, vy)], fill=col, width=2)
+        
+        draw.text((100, 350), "F(x,y) = ⟨x, y⟩", fill=theme["text"], font=font_text)
+        draw.text((100, 375), "∇·F = 2 (divergence)", fill=theme["accent"], font=font_text)
+        return np.array(img)
+    
+    return VideoClip(make_frame, duration=duration)
